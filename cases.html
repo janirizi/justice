@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cases | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cases">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>Cases</h1>
+          <p>Create, track, prioritize, and monitor case progress.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="reports.html">View Reports</a></div>
+      </div>
+      <section class="grid grid-2">
+  <form class="card" data-demo data-message="Case created successfully.">
+    <h2>Create New Case</h2>
+    <div class="form-grid full">
+      <div class="field"><label>Case Title</label><input placeholder="Enter case title" required /></div>
+      <div class="field"><label>Priority</label><select><option>Normal</option><option>High</option><option>Urgent</option></select></div>
+      <div class="field"><label>Description</label><textarea rows="4" placeholder="Write a short case summary"></textarea></div>
+    </div>
+    <br><button class="btn" type="submit">Create Case</button>
+  </form>
+  <div class="card">
+    <h2>Case Summary</h2>
+    <div class="notice"><div class="notice-icon">⚖️</div><div><h3>56 cases in system</h3><p>18 are open, 27 resolved, and 11 currently under review.</p></div></div>
+    <br><div class="notice"><div class="notice-icon">🚨</div><div><h3>3 urgent cases</h3><p>Urgent cases should be reviewed first by assigned officers.</p></div></div>
+  </div>
+</section>
+<div class="section-heading"><div><h2>Case Records</h2><p>All case-related data is placed in the case section for clarity.</p></div></div>
+<section class="card table-wrap"><table><thead><tr><th>ID</th><th>Title</th><th>Status</th><th>Priority</th><th>Updated</th></tr></thead><tbody>
+  <tr><td>Case001</td><td>Document Verification</td><td><span class="badge open">Open</span></td><td><span class="badge warning">High</span></td><td>Today</td></tr>
+  <tr><td>Case002</td><td>User Identity Review</td><td><span class="badge success">Resolved</span></td><td><span class="badge info">Normal</span></td><td>Yesterday</td></tr>
+  <tr><td>Case003</td><td>Evidence Upload Review</td><td><span class="badge purple">Under Review</span></td><td><span class="badge danger">Urgent</span></td><td>2 days ago</td></tr>
+</tbody></table></section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

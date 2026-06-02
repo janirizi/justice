@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit Logs | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="logs">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>Audit Logs</h1>
+          <p>Transparent activity history for security and accountability.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="monitoring.html">Monitoring</a></div>
+      </div>
+      <section class="card">
+  <div class="section-heading" style="margin-top:0"><div><h2>Security Audit Trail</h2><p>Structured logs help track all important system actions.</p></div></div>
+  <div class="table-wrap"><table><thead><tr><th>Time</th><th>User</th><th>Action</th><th>Status</th></tr></thead><tbody>
+    <tr><td>12:00</td><td>Admin</td><td>Login</td><td><span class="badge success">Success</span></td></tr>
+    <tr><td>12:08</td><td>Officer</td><td>Case Updated</td><td><span class="badge open">Recorded</span></td></tr>
+    <tr><td>12:16</td><td>Reviewer</td><td>Report Viewed</td><td><span class="badge info">Info</span></td></tr>
+  </tbody></table></div>
+</section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

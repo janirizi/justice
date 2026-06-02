@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-body">
+  <section class="login-card">
+    <div class="login-art">
+      <div class="logo">JR</div>
+      <h1>JusticeRollOn</h1>
+      <p>A professional admin interface for case management, secure document uploads, monitoring, reporting, notifications, and audit logs.</p>
+      <div class="quick-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="cases.html">Cases</a>
+        <a href="reports.html">Reports</a>
+      </div>
+    </div>
+    <form class="login-form" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+      <h2>Welcome back</h2>
+      <p>Login to continue to the connected professional dashboard.</p>
+      <div class="field"><label>Username</label><input name="u" placeholder="Enter username" required /></div><br>
+      <div class="field"><label>Password</label><input name="p" type="password" placeholder="Enter password" required /></div><br>
+      <button class="btn" style="width:100%" type="submit">Login</button>
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="settings">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>Settings</h1>
+          <p>Configure profile, security, notifications, and system preferences.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="login.html">Logout</a></div>
+      </div>
+      <section class="grid grid-2">
+  <form class="card" data-demo data-message="Settings saved successfully.">
+    <h2>Profile Settings</h2>
+    <div class="form-grid full">
+      <div class="field"><label>Email</label><input type="email" placeholder="admin@justicerollon.local" /></div>
+      <div class="field"><label>Password</label><input type="password" placeholder="Enter new password" /></div>
+      <div class="field"><label>Theme Preference</label><select><option>Professional Blue</option><option>Emerald</option><option>Purple</option></select></div>
+    </div>
+    <br><button class="btn" type="submit">Save Settings</button>
+  </form>
+  <div class="card">
+    <h2>System Preferences</h2>
+    <div class="notice"><div class="notice-icon">🔔</div><div><h3>Email Notifications</h3><p>Enabled for case updates and security logs.</p></div></div>
+    <br><div class="notice"><div class="notice-icon">🛡️</div><div><h3>Security Mode</h3><p>Recommended secure defaults are active.</p></div></div>
+  </div>
+</section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

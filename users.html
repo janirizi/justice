@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Management | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="users">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>User Management</h1>
+          <p>Manage administrators, officers, reviewers, and access permissions.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="logs.html">Audit Logs</a></div>
+      </div>
+      <section class="card">
+  <div class="section-heading" style="margin-top:0"><div><h2>Registered Users</h2><p>Manage roles and user access from one professional table.</p></div><button class="btn">+ Add User</button></div>
+  <div class="table-wrap"><table><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Actions</th></tr></thead><tbody>
+    <tr><td>1</td><td>Admin</td><td>admin@justicerollon.local</td><td>Super Admin</td><td><span class="badge success">Active</span></td><td><button class="btn secondary">Edit</button></td></tr>
+    <tr><td>2</td><td>Case Officer</td><td>officer@justicerollon.local</td><td>Officer</td><td><span class="badge open">Active</span></td><td><button class="btn secondary">Edit</button></td></tr>
+    <tr><td>3</td><td>Reviewer</td><td>reviewer@justicerollon.local</td><td>Reviewer</td><td><span class="badge warning">Pending</span></td><td><button class="btn secondary">Edit</button></td></tr>
+  </tbody></table></div>
+</section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

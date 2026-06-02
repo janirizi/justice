@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Monitoring | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="monitoring">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>System Monitoring</h1>
+          <p>Track infrastructure, services, and application health in one view.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="logs.html">System Logs</a></div>
+      </div>
+      <section class="grid grid-3">
+  <article class="card"><h2>CPU</h2><div class="metric"><strong>Usage</strong><span>70%</span></div><div class="progress"><div style="width:70%"></div></div></article>
+  <article class="card"><h2>Memory</h2><div class="metric"><strong>Usage</strong><span>50%</span></div><div class="progress"><div style="width:50%"></div></div></article>
+  <article class="card"><h2>Storage</h2><div class="metric"><strong>Usage</strong><span>62%</span></div><div class="progress"><div style="width:62%"></div></div></article>
+</section>
+<div class="section-heading"><div><h2>Service Health</h2><p>Live-style status cards for key services.</p></div></div>
+<section class="grid grid-3">
+  <div class="notice"><div class="notice-icon">🐳</div><div><h3>Docker</h3><p><span class="badge success">Running</span></p></div></div>
+  <div class="notice"><div class="notice-icon">🔥</div><div><h3>Prometheus</h3><p><span class="badge success">Active</span></p></div></div>
+  <div class="notice"><div class="notice-icon">📉</div><div><h3>Grafana</h3><p><span class="badge success">Active</span></p></div></div>
+</section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

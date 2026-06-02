@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="dashboard">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>Dashboard</h1>
+          <p>Real-time command center for users, cases, uploads, and platform health.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="reports.html">Open Reports</a><a class="btn" href="upload.html">Upload File</a></div>
+      </div>
+      <section class="grid grid-4">
+  <article class="card stat-card gradient-blue"><div class="label"><span>Total Users</span><span>+12%</span></div><h2>120</h2><p>Active registered accounts</p></article>
+  <article class="card stat-card gradient-green"><div class="label"><span>Total Cases</span><span>+8%</span></div><h2>56</h2><p>Open and resolved cases</p></article>
+  <article class="card stat-card gradient-pink"><div class="label"><span>Uploads</span><span>+34%</span></div><h2>230</h2><p>Documents uploaded</p></article>
+  <article class="card stat-card gradient-purple"><div class="label"><span>System Health</span><span>Live</span></div><h2>98%</h2><p>Services operational</p></article>
+</section>
+
+<div class="section-heading"><div><h2>Recent Case Activity</h2><p>Latest operational records across the platform.</p></div><a class="btn secondary" href="cases.html">View Cases</a></div>
+<section class="grid grid-2">
+  <div class="card table-wrap"><table><thead><tr><th>Case ID</th><th>Owner</th><th>Status</th><th>Priority</th></tr></thead><tbody>
+    <tr><td>Case001</td><td>Admin</td><td><span class="badge open">Open</span></td><td><span class="badge warning">High</span></td></tr>
+    <tr><td>Case002</td><td>Reviewer</td><td><span class="badge success">Resolved</span></td><td><span class="badge info">Normal</span></td></tr>
+    <tr><td>Case003</td><td>Officer</td><td><span class="badge purple">Under Review</span></td><td><span class="badge danger">Urgent</span></td></tr>
+  </tbody></table></div>
+  <div class="card">
+    <h2>Platform Performance</h2>
+    <div class="metric"><strong>CPU Usage</strong><span>70%</span></div><div class="progress"><div style="width:70%"></div></div>
+    <div class="metric"><strong>Memory</strong><span>50%</span></div><div class="progress"><div style="width:50%"></div></div>
+    <div class="metric"><strong>Storage</strong><span>62%</span></div><div class="progress"><div style="width:62%"></div></div>
+  </div>
+</section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

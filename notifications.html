@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notifications | JusticeRollOn</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="notifications">
+  <div class="layout">
+    <div id="app-sidebar"></div>
+    <main class="main">
+      <div class="topbar">
+        <div class="page-title">
+          <button class="mobile-menu" data-mobile-menu>☰ Menu</button>
+          <h1>Notifications</h1>
+          <p>View recent alerts, assignments, and deployment messages.</p>
+        </div>
+        <div class="actions"><a class="btn secondary" href="dashboard.html">Dashboard</a></div>
+      </div>
+      <section class="grid">
+  <div class="notice"><div class="notice-icon">👤</div><div><h3>New user registered</h3><p>A new staff member has joined and is waiting for role verification.</p></div></div>
+  <div class="notice"><div class="notice-icon">⚖️</div><div><h3>Case assigned</h3><p>Case001 has been assigned to the review team for next action.</p></div></div>
+  <div class="notice"><div class="notice-icon">🚀</div><div><h3>Deployment successful</h3><p>The latest static front-end update was deployed successfully.</p></div></div>
+</section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
