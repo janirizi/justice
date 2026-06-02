@@ -1,2 +1,1 @@
-# justice
-justice project
+Run: pip install -r requirements.txt && python app.py ; login admin/admin123
